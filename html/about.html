@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agrandir:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>About</title>
+</head>
+<body>
+   
+      <!--Navbar -->
+      <header>
+        <!--Nav-->
+        <div class="nav container">
+          <!--Logo-->
+          <a href="home.html" class="logo"> <span class="logo-part1">Thri</span><span class="logo-part2">ftee</span></a>
+          <!--NavLink-->
+          <ul class="nav-links">
+             <li><a href="/html/home.html">Home</a></li>
+             <li><a href="/html/about.html">About</a></li>
+             <li><a href="/html/item.html">Item</a></li>
+             <li><a href="/html/contact.html">Contact</a></li>
+         </ul>
+         <!-- Search Container -->
+         <div class="search-container">
+             <input type="search" placeholder="Search Here">
+              <span class='bx bx-search'></span>
+         </div>
+ 
+         <!-- Notification Bell Icon -->
+         <a href="/html/notif.html"><i class='bx bxs-bell' ></i></a>
+ 
+         <!-- User Login Icon -->
+         <a href="/html/profile.html"><i class='bx bxs-user'></i></a>
+ 
+          <!--Cart Icon-->
+         <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i>
+ 
+          <!--cart-->
+          <div class="cart">
+             <h2 class="cart-title"> Your Cart</h2>
+             <!--Content-->
+             <div class="cart-content"></div>
+             <!--Total-->
+             <div class="total">
+                 <div class="total-title">Total</div>
+                 <div class="total-price">₱0</div>
+             </div>
+             <!--Buy Button-->
+             <button type="button" class="btn-buy" id="pay-now" onclick="location.href='/html/checkout.html';">Pay Now</button>
+             <!--Close Cart-->
+             <i class='bx bx-x' id="close-cart"></i>
+          </div>
+        </div>
+     </header>
+ 
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <div class="image-container">
+            <img src="/html/img/A1.png" alt="image" class="a">
+        </div>
+        <div class="text-container">
+            <h2>ABOUT US</h2>
+            <p>
+                Our mission is to celebrate the art of thrifting by offering a curated selection of pre-loved and vintage clothing that combines charm, elegance, and sustainability. We are dedicated to providing unique, timeless pieces that not only meet our high standards of quality and style but also contribute to a more sustainable fashion industry. Our goal is to give each garment a new life while helping our customers discover fashion that reflects their individuality and values. <br>
+                Our vision is to be a top destination for vintage and pre-loved fashion, known for our commitment to sustainability and style. We aim to inspire mindful fashion consumption by celebrating the unique stories behind each garment, fostering a future where sustainable choices enhance personal style and make a positive impact.
+            </p>
+        </div>    
+    </div>
+    <script src="/html/js/item.js"></script>
+</body>
+</html>

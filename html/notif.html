@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/html/css/notif.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agrandir:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="/html/home.html" class="logo"> <span class="logo-part1">Thri</span><span class="logo-part2">ftee</span></a>
+            <!-- Nav Links -->
+            <ul class="nav-links">
+                <li><a href="/html/home.html">Home</a></li>
+                <li><a href="/html/about.html">About</a></li>
+                <li><a href="/html/item.html">Item</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
+            </ul>
+            <!-- Search Container -->
+            <div class="search-container">
+                <input type="search" placeholder="Search Here">
+                <span class='bx bx-search'></span>
+            </div>
+
+            <!-- Notification Bell Icon -->
+            <a href="/html/notif.html"><i class='bx bxs-bell' ></i></a>
+
+            <!-- User Login Icon -->
+            <a href="/html/profile.html"><i class='bx bxs-user'></i></a>
+
+            <!-- Cart Icon -->
+            <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0">  </i>
+
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title"> Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₱0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy" id="pay-now" onclick="location.href='/html/checkout.html';">Pay Now</button>
+
+                <!-- Close Cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="notification-container">
+        <div class="notification-box">
+            <h2 class="notification-title">Notification</h2>
+            <ul class="notification-message">
+                <li>Your delivery is on shipment. Expected delivery date: <strong>July 25, 2024</strong></li>
+                <li>Your item <strong>Order #12345</strong> has shipped! Expected delivery date: <strong>July 27, 2024</strong></li>
+                <li>Reminder: Your <strong>Subscription Box</strong> is on its way. Expected delivery date: <strong>August 1, 2024</strong></li>
+                <li>Your recent purchase is now in transit. Expected delivery date: <strong>July 30, 2024</strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="/html/js/item.js"></script>
+</body>
+</html>

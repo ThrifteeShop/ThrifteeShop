@@ -1,0 +1,231 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    background-image: url('/html/img/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 35rem;
+    text-align: left; 
+    display: block; 
+    width: 100%;
+    margin-top: 2rem; 
+    text-decoration: none;
+}
+
+.logo-part1 {
+    font-family: 'Impact', sans-serif;
+    color: black;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 4px 0 #fff; /* Larger text shadow */
+}
+
+.logo-part2 {
+    font-family: 'Impact', sans-serif;
+    color: #C04000;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 4px 0 #fff; /* Larger text shadow */
+}
+
+.login-container {
+    background: linear-gradient(to bottom,#EFC470, #FFE0A5);
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 20px;
+    width: 500px;;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 60px;
+    height: 600px;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+.show-password {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.login-title {
+    font-size: 2.1em;
+    color: black;
+    margin-bottom:5px;
+    margin-top: -3px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#email-label, #password-label, #name-label, #confirm-password-label {
+    text-align: left;
+    margin-left: 27%;
+}
+
+ 
+
+.login-form label {
+    font-size: 1em;
+    margin: 10px 0 5px;
+    color: black;
+    text-align: right;
+    width: 100%; 
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    width: calc(80% - 25px);
+    max-width: 300px;
+    display: inline-block; 
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.show-password {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.show-password label {
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 300;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(to top,#EFC470, #FFE0A5);
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px; 
+    margin-top: 10px; 
+    text-align: center;
+    text-decoration: none; 
+
+}
+button a:hover {
+    background: linear-gradient(to bottom,#EFC470, #FFE0A5);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.links a {
+    text-decoration: underline;
+    color: black;
+    font-size: 0.9em;
+    margin: 0 10px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #dda20f;
+    color: white;
+  }
+
+  .fa-envelope {
+    background: #d08362;
+    color: white;
+  }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 19px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer-links span {
+    margin: 1 5px;
+}
+
+.people-images {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.people-images .left-person {
+    position: absolute;
+    bottom: -60px;
+    left: 740px;
+    margin-left: 10px;
+}
+
+.people-images .right-person {
+    position: absolute;
+    bottom: -60px;
+    right: 90px;
+    transform: scaleX(-1);
+    margin-left: 50px;
+}
+
+.people-images img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 50px;
+    
+}

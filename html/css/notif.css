@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+img{
+    width: 100%;
+}
+body{
+    background-image: url(/html/img/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Base font size */
+}
+section {
+    padding: 4rem 0 3rem;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+/* header section start  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #EFC470,#FFE0A5);
+    box-shadow: 0 1px 4px hsla(0, 0%, 98%, 0.1);
+    z-index: 100;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-left: 100px; /* Adjust margin-left to move content slightly left */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000; /* Text color */
+    padding: 8px 12px; /* Padding around each link */
+    margin: 0 10px; /* Adjusted margin */
+    margin-right: 20px; /* Adjust as needed for spacing between links */
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color:#C04000; 
+}
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.logo-part1 {
+    font-family: 'Impact', sans-serif;
+    color: black;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 2px 0 #fff;
+}
+
+.logo-part2 {
+    font-family: 'Impact', sans-serif;
+    color: #C04000;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 2px 0 #fff;
+}
+
+.logo-part1, .logo-part2 {
+    font-size: 2.5rem; /* Adjust the size as needed */
+}
+
+.bx.bxs-user,
+.bx.bxs-bell {
+    font-size: 1.8rem; /* Adjust size as needed */
+    cursor: pointer;
+    position: relative;
+    margin-right: 25px;
+    color: #000000;
+}
+
+/* Adjust hover effect if needed */
+.bx.bxs-user:hover,
+.bx.bxs-bell:hover {
+    color:  #C04000; /* Hover color change */
+}
+
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+}
+
+#cart-icon[data-quantity="0"]::after {
+    content: "";
+}
+
+#cart-icon[data-quantity]::after {
+    content: attr(data-quantity);
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background:#C04000;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-icon:hover {
+    color: #C04000;
+    cursor: pointer; 
+  }
+
+/* Style the search container */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.search-container input[type=search] {
+    padding: 6px 30px 6px 10px; /* Padding inside the search input */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 20px;
+    width: 300px;
+    margin-right: 15px;
+}
+
+
+.search-container .bx-search {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 85%;
+    transform: translateY(-50%);
+    color: #000000; /* Search icon color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.bx.bx-search:hover {
+    color: #C04000; /* Red color on hover */
+    cursor: pointer;
+}
+
+
+/* Cart */
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #EFC470,#FFE0A5);
+    box-shadow: -2px 0 4px hsla(0, 4%, 15% / 10%);
+    transition: 0.3 cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-left: 2px solid black;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.cart.active { 
+    right: 0;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.cart-title{
+    font-weight: 500px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 2px solid black;
+}
+.total-title{
+    font-weight: 500px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #000000;
+}
+.total-price{
+    font-size: 1.075rem;
+    margin: 1rem 0 0 0.7rem;
+    color: #000000;
+}
+.btn-buy{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background:linear-gradient(to top, #FFC084, #FFE0B6);
+    color: black;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+.cart-box{
+    color: #000000;
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+.detailed-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: black;
+    width: 2.8rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.cart-remove{
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+    z-index: 1; /* Ensure it's behind the notification container */
+}
+
+/* Styles for the notification container */
+.notification-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it's above the overlay */
+    width: 100%;
+    height: 100%; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background to highlight the notification */
+}
+
+.notification-box {
+    opacity: .9;
+    margin-top: 70px;
+    background: linear-gradient(to bottom, #EFC470,#FFE0A5);
+    border-radius: 15px; /* Rounded corners */
+    padding: 60px; /* Increased padding */
+    width: 8000px; /* Increased width */
+    max-width: 90%; /* Responsive max-width */
+    text-align: center;
+}
+
+.notification-title {
+    font-size: 3rem; /* Larger font size */
+    color: #000000;
+    margin-bottom: 30px; /* Increased margin */
+    text-align: left;
+}
+
+.notification-message {
+    font-size: 1.5rem; /* Larger font size */
+    color: #000000;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.notification-message li {
+    margin-bottom: 15px; /* Space between list items */
+    text-align: justify; /* Justify text alignment */
+}
+
+/* Optional: Add extra margin or padding to the last item to ensure it looks balanced */
+.notification-message li:last-child {
+    margin-bottom: 0;
+}
+
+.notification-message strong {
+    color: #000; /* Emphasize important text */
+}

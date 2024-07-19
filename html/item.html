@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/html/css/item.css">
+    <title>Item</title>
+</head>
+<body>
+    <!--Navbar -->
+    <header>
+       <!--Nav-->
+       <div class="nav container">
+        <!--Logo-->
+        <a href="/html/about.html" class="logo"> <span class="logo-part1">Thri</span><span class="logo-part2">ftee</span></a>
+        <!--NavLink-->
+        <ul class="nav-links">
+           <li><a href="/html/home.html">Home</a></li>
+           <li><a href="/html/about.html">About</a></li>
+           <li><a href="/html/item.html">Item</a></li>
+           <li><a href="/html/contact.html">Contact</a></li>
+       </ul>
+        <!-- Search Container -->
+        <div class="search-container">
+            <input type="search" placeholder="Search Here">
+             <span class='bx bx-search'></span>
+        </div>
+
+        <!-- Notification Bell Icon -->
+        <a href="/html/notif.html"><i class='bx bxs-bell' ></i></a>
+
+        <!-- User Login Icon -->
+        <a href="/html/profile.html"><i class='bx bxs-user'></i></a>
+
+         <!--Cart Icon-->
+        <i class='bx bxs-shopping-bag' id="cart-icon" data-quantity="0"></i>
+
+         <!--cart-->
+         <div class="cart">
+            <h2 class="cart-title"> Your Cart</h2>
+            <!--Content-->
+            <div class="cart-content"></div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₱0</div>
+            </div>
+            <!--Buy Button-->
+            <button type="button" class="btn-buy" id="pay-now" onclick="location.href='/html/checkout.html';">Pay Now</button>
+            <!--Close Cart-->
+            <i class='bx bx-x' id="close-cart"></i>
+         </div>
+         
+       </div>
+    </header>
+
+    <!--Item-->
+    <section class="shop container">
+       <h2 class="section-title"> Product Item</h2>
+       <!--Item Content-->
+       <div class="shop-content">
+           <!--Box 1-->
+           <div class="product-box" data-title="Vintage Dress" data-description="This is a vintage dress perfect for special occasions." data-price="₱20">
+            <img src="img/1.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Vintage Dress</h2>
+            <p class="product-description" style="display:none;">This is a vintage dress perfect for special occasions.</p>
+            <span class="price">₱20</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+
+               <!--Box 2-->
+               <div class="product-box" data-title="Summer Wear" data-description="This summer outfit features gray shorts and a green top with white accents, perfect for sunny days." data-price="₱40">
+                <img src="img/2.jpg" alt="" class="product-img" />
+                <h2 class="product-title">Summer Wear</h2>
+                <p class="product-description" style="display:none;">This summer outfit features gray shorts and a green top with white accents, perfect for sunny days.</p>
+                <span class="price">₱40</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+                <!--Box 3-->
+                <div class="product-box" data-title="Off Shoulder" data-description="This outfit features an off-the-shoulder light blue top with a bow and a high-waisted white skirt, perfect for warm weather." data-price="₱40">
+                    <img src="img/3.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Off Shoulder</h2>
+                    <p class="product-description" style="display:none;">This outfit features an off-the-shoulder light blue top with a bow and a high-waisted white skirt, perfect for warm weather.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 4-->
+                <div class="product-box" data-title="Summer Outfit" data-description="This summer outfit features a light green cropped button-up shirt, perfect for warm weather." data-price="₱40">
+                    <img src="img/4.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Summer Outfit</h2>
+                    <p class="product-description" style="display:none;">This summer outfit features a light green cropped button-up shirt, perfect for warm weather.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 5-->
+                <div class="product-box" data-title="Midnight Garden Floral Dress" data-description="Floral pattern on black, sleeveless with fitted waist, midi-length skirt. Perfect for casual and semi-formal summer events." data-price="₱40">
+                    <img src="img/5.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Midnight Garden Floral Dress</h2>
+                    <p class="product-description" style="display:none;">Floral pattern on black, sleeveless with fitted waist, midi-length skirt. Perfect for casual and semi-formal summer events.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 6-->
+                <div class="product-box" data-title="Light Blue Paisley Dress" data-description="It features a square neckline, wide straps, a fitted bodice, and a flared skirt, made of light fabric." data-price="₱40">
+                    <img src="img/6.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Light Blue Paisley Dress</h2>
+                    <p class="product-description" style="display:none;">It features a square neckline, wide straps, a fitted bodice, and a flared skirt, made of light fabric.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 7-->
+                <div class="product-box" data-title="Green Cocktail Dress" data-description="An off-the-shoulder neckline, fitted bodice, crossover detail, and a flared skirt characterize this dark green cocktail dress. " data-price="₱40">
+                    <img src="img/7.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Green Cocktail Dress</h2>
+                    <p class="product-description" style="display:none;">An off-the-shoulder neckline, fitted bodice, crossover detail, and a flared skirt characterize this dark green cocktail dress. </p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 8-->
+                <div class="product-box" data-title="Retro Collared Dress" data-description="The dress features a fitted bodice, flared skirt, and a wide, pointed collar for a classic, elegant look." data-price="₱40">
+                    <img src="img/8.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Retro Collared Dress</h2>
+                    <p class="product-description" style="display:none;">The dress features a fitted bodice, flared skirt, and a wide, pointed collar for a classic, elegant look..</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                <!--Box 9-->
+                <div class="product-box" data-title="Denim Patch Shorts" data-description="Blue denim shorts featuring large star-shaped patches on the front, creating a unique and casual look." data-price="₱40">
+                    <img src="img/9.png" alt="" class="product-img" />
+                    <h2 class="product-title">Denim Patch Shorts</h2>
+                    <p class="product-description" style="display:none;">Blue denim shorts featuring large star-shaped patches on the front, creating a unique and casual look.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                   <!--Box 10-->
+                <div class="product-box" data-title="Button-Up Skirt" data-description="Olive green, high-waisted skirt with a button-up front and large pockets, paired with a tied belt for a stylish summer outfit." data-price="₱40">
+                    <img src="img/10.png" alt="" class="product-img" />
+                    <h2 class="product-title">Button-Up Skirt</h2>
+                    <p class="product-description" style="display:none;">Olive green, high-waisted skirt with a button-up front and large pockets, paired with a tied belt for a stylish summer outfit.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                   <!--Box 11-->
+                <div class="product-box" data-title="Cargo Shorts" data-description="Black high-waisted shorts with utility pockets and rolled hems, offering a practical and chic summer look." data-price="₱40">
+                    <img src="img/11.png" alt="" class="product-img" />
+                    <h2 class="product-title">Cargo Shorts</h2>
+                    <p class="product-description" style="display:none;">Black high-waisted shorts with utility pockets and rolled hems, offering a practical and chic summer look.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                   <!--Box 12-->
+                <div class="product-box" data-title="Drawstring Shorts" data-description="Comfortable shorts available in beige, brown, and black, featuring an elastic waistband with a drawstring for a relaxed fit." data-price="₱40">
+                    <img src="img/12.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Drawstring Shorts</h2>
+                    <p class="product-description" style="display:none;">Comfortable shorts available in beige, brown, and black, featuring an elastic waistband with a drawstring for a relaxed fit.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                  <!--Box 13-->
+                  <div class="product-box" data-title="Plaid Overshirt" data-description="A blue and orange plaid overshirt with a loose fit, perfect for layering in cooler summer evenings." data-price="₱40">
+                    <img src="img/13.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Plaid Overshirt/h2>
+                    <p class="product-description" style="display:none;">A blue and orange plaid overshirt with a loose fit, perfect for layering in cooler summer evenings.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                  <!--Box 14-->
+                  <div class="product-box" data-title="Bomber Jacket" data-description="A green bomber jacket with a zip-up front and ribbed cuffs, providing a stylish and lightweight outer layer for summer." data-price="₱40">
+                    <img src="img/14.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Bomber Jacket</h2>
+                    <p class="product-description" style="display:none;">A green bomber jacket with a zip-up front and ribbed cuffs, providing a stylish and lightweight outer layer for summer.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                  <!--Box 15-->
+                  <div class="product-box" data-title="Paisley Print Shirt" data-description="A short-sleeved shirt featuring a bold paisley print in earthy tones, ideal for a casual yet fashionable summer look." data-price="₱40">
+                    <img src="img/15.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Paisley Print Shirt</h2>
+                    <p class="product-description" style="display:none;">A short-sleeved shirt featuring a bold paisley print in earthy tones, ideal for a casual yet fashionable summer look.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                  <!--Box 16-->
+                  <div class="product-box" data-title="Cat Graphic Tee" data-description="A beige T-shirt with playful cat graphics, adding a fun and whimsical touch to any summer outfit.
+                  " data-price="₱40">
+                    <img src="img/16.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Cat Graphic Tee</h2>
+                    <p class="product-description" style="display:none;">A beige T-shirt with playful cat graphics, adding a fun and whimsical touch to any summer outfit.
+                    </p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 17-->
+                 <div class="product-box" data-title="Burgundy Suit" data-description="A sharp burgundy suit with a matching tie and trousers, suitable for formal summer occasions." data-price="₱40">
+                    <img src="img/17.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Burgundy Suit</h2>
+                    <p class="product-description" style="display:none;">A sharp burgundy suit with a matching tie and trousers, suitable for formal summer occasions.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 18-->
+                 <div class="product-box" data-title="Red and Black Tuxedo" data-description="A sleek black tuxedo with red lapels and accents, designed for a striking and elegant look at formal events." data-price="₱40">
+                    <img src="img/18.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Red and Black Tuxedo</h2>
+                    <p class="product-description" style="display:none;">A sleek black tuxedo with red lapels and accents, designed for a striking and elegant look at formal events.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 19-->
+                 <div class="product-box" data-title="Grey Three-Piece Suit" data-description=" A sophisticated grey suit with a matching vest and trousers, perfect for both business and formal summer events." data-price="₱40">
+                    <img src="img/19.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Grey Three-Piece Suit</h2>
+                    <p class="product-description" style="display:none;"> A sophisticated grey suit with a matching vest and trousers, perfect for both business and formal summer events.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 20-->
+                 <div class="product-box" data-title="Navy Cropped Suit" data-description="A modern navy suit with a cropped jacket and slim trousers, offering a contemporary twist on classic formal wear." data-price="₱40">
+                    <img src="img/20.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Navy Cropped Suit</h2>
+                    <p class="product-description" style="display:none;">A modern navy suit with a cropped jacket and slim trousers, offering a contemporary twist on classic formal wear.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 21-->
+                 <div class="product-box" data-title="Classic Trio Shorts" data-description="A set of three pairs of shorts in beige, gray, and olive green colors." data-price="₱40">
+                    <img src="img/21.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Classic Trio Shorts</h2>
+                    <p class="product-description" style="display:none;">A set of three pairs of shorts in beige, gray, and olive green colors.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 22-->
+                 <div class="product-box" data-title="Nautical Explorer Shorts" data-description="A pair of brown shorts with a blue drawstring, featuring a design of a compass " data-price="₱40">
+                    <img src="img/22.jpg" alt="" class="product-img" />
+                    <h2 class="product-title">Nautical Explorer Shorts</h2>
+                    <p class="product-description" style="display:none;">A pair of brown shorts with a blue drawstring, featuring a design of a compass </p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 23-->
+                 <div class="product-box" data-title="Urban Edge Shorts" data-description="A pair of black shorts with metal chains and buckles as embellishments." data-price="₱40">
+                    <img src="img/23.png" alt="" class="product-img" />
+                    <h2 class="product-title">Urban Edge Shorts</h2>
+                    <p class="product-description" style="display:none;">A pair of black shorts with metal chains and buckles as embellishments.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+
+                 <!--Box 24-->
+                 <div class="product-box" data-title="Utility Cargo Shorts" data-description="A pair of brown cargo shorts with multiple pockets and a white drawstring." data-price="₱40">
+                    <img src="img/24.png" alt="" class="product-img" />
+                    <h2 class="product-title">Utility Cargo Shorts</h2>
+                    <p class="product-description" style="display:none;">A pair of brown cargo shorts with multiple pockets and a white drawstring.</p>
+                    <span class="price">₱40</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                    <!-- Modal -->
+                <div id="productModal" class="modal">
+                      <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                             <img id="modalImg" src="" alt="" class="modal-img">
+                             <h2 id="modalTitle" class="modal-title"></h2>
+                             <p id="modalDescription" class="modal-description"></p>
+                             <span id="modalPrice" class="modal-price"></span>
+                      </div>
+                </div>
+       </div>
+    </section>
+
+    <!--Link to js-->
+    <script src="/html/js/item.js"></script>
+    <script src="/html/js/modals.js"></script>
+       
+</body>
+</html>
